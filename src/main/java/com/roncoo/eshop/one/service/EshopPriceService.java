@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "eshop-price-service",fallback = EshopPriceService.class)
+@FeignClient(value = "eshop-price-service")
 public interface EshopPriceService {
 
 	@RequestMapping(value = "/product-price/findByProductId",method = RequestMethod.GET)
