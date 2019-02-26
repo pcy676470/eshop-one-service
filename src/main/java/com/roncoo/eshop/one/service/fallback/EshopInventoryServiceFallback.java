@@ -7,7 +7,6 @@ import com.roncoo.eshop.one.service.EshopInventoryService;
 @Component
 public class EshopInventoryServiceFallback implements EshopInventoryService{
 
-	@Override
 	public String findByProductId(Long productId) {
 
 		return "降级库存数据";

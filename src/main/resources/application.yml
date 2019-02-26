@@ -6,6 +6,10 @@ eureka:
 server:
   port: 8768
   
+spring:
+  application:
+    name: eshop-one-service
+    
 feign: 
   hystrix:
     enabled: true

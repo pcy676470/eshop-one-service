@@ -7,7 +7,6 @@ import com.roncoo.eshop.one.service.EshopPriceService;
 @Component
 public class EshopPriceServiceFallback implements EshopPriceService{
 
-	@Override
 	public String findByProductId(Long productId) {
 
 		return "降级价格数据";
